@@ -70,6 +70,10 @@ nav{
     letter-spacing: 0.05em;
 }
 
+.nav-bars{
+    display: none;
+}
+
 
 /* section - 1  till section 3 same*/
 
@@ -79,16 +83,16 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     margin-top: 6vh;
-    margin-bottom: 12vh;
-    gap: 8vw;
+    margin-bottom: 6vh;
+    gap: 6vw;
 }
 
 .section1-left{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-start;
-    
+    gap: 1.5vh;    
 }
 
 .choose-pacakge-btn{
@@ -115,7 +119,12 @@ nav{
     font-weight: 500;
     line-height: 2em;
 }
+
 /* section 2 small change */
+.section1_2{
+    margin-top: -0.75vh;
+}
+
 .section2-image{
     order: 0;
     position: relative;
@@ -125,6 +134,7 @@ nav{
 .section2-description{
     order: 1;
 }
+
 /* section 4 small change */
 
 .section4-1{
@@ -134,9 +144,11 @@ nav{
 .section-4-2{
     margin: 0vh 0vw 10vh 0vw;
 }
+
 .section-4-2-1{
     margin: 10vh 5vw 5vh 6vw;
 }
+
 .section4_1_right{
     width: 70vw;
 }
@@ -152,10 +164,11 @@ nav{
     flex-direction: column;
     justify-content: space-around;
 } */
+
 /* section 5 card section  */
 
 .card-section{
-    height: 90vh;
+    height: 95vh;
     background: linear-gradient(to top left ,
     #0079fb, #3fb6f6);
     display: flex;
@@ -176,11 +189,12 @@ nav{
     gap: 1.5em;
 
 }
+
 .card{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 65vh;
+    height: 75vh;
     width: 25vw;
     background-color: #ffffff;
     border-radius: 10px;
@@ -223,11 +237,11 @@ nav{
     gap: 0.7em;
     margin-bottom: -3em;
 }
+
 .card_pricing>h2>span{
     color: #8b8a8a;
     
 }
-
 
 .card-button{
     border-radius: 10px;
@@ -265,8 +279,7 @@ nav{
   margin-right: 1.2em;
 }
 
-
-div.card_sec1.card_hover:hover{
+.card_hover:hover div.card_sec1{
        display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -278,7 +291,7 @@ div.card_sec1.card_hover:hover{
     border-radius: 10px;
 }
 
-button.card-button.card_hover:hover {
+.card_hover:hover button.card-button{
     border-radius: 10px;
     color: #ffffff;
     font-size: 1em;
@@ -313,6 +326,7 @@ button.card-button.card_hover:hover {
     font-size: 45px;
     margin-bottom: 2rem;
 }
+
 .section6-2{
     display: flex;
     flex-direction: column;
@@ -346,19 +360,20 @@ button.card-button.card_hover:hover {
  
 }
 
-
 .author{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     gap: 2em;
 }
+
 .profile{
     height: 4em;
     width: 4em;
     background-color: #cdcdcd;
     border-radius: 50%;
 }
+
 .author_name{
     display: flex;
     flex-direction: column;
@@ -378,8 +393,6 @@ button.card-button.card_hover:hover {
     width: 100vw;
     background-image: repeating-linear-gradient(155deg, #35a3fde1 ,#3baaf9f0, #137ffaf9);
 }
-
-
 
 .section7-left{
     display: flex;
@@ -443,4 +456,294 @@ footer{
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
+}
+
+@media screen and (min-width:950px) and (max-width:1250px) {
+    
+/* nav bar */
+nav{
+    margin: 3vh 3vw 0vh 3vw;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo>svg{
+    height: 2.5rem;
+}
+
+.nav-right{
+    margin-right: 0vw;
+}
+
+.nav-list-items{
+    gap: 1.5rem;
+}
+
+.nav-button{
+    padding: 0.75em 1.25em;
+    font-size: 15px;
+}
+
+
+/* section - 1  till section 3 same*/
+
+.section1-right>svg{
+    height: 420px;
+}
+
+.section1-heading{
+    font-size: 34px;
+    text-transform: capitalize;
+}
+
+.choose-pacakge-btn{
+    font-size: 15px; 
+    padding: 1em 1.75em;  
+}
+
+/* section 2 small change */
+
+.section2-image>svg{
+   height: 350px;
+  
+   }
+
+/* section 3 small change */
+
+.section1-right>img{
+    height: 500px;
+   
+    }
+ 
+
+/* 
+
+ */
+
+    
+}
+
+
+@media screen and (min-width:0px) and (max-width:800px){ 
+
+    *{
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        overflow-x: hidden;
+    }
+    /* navbar */
+
+    nav{
+        margin: 3vh 3vw 0vh 2vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo>svg{
+        height: 2rem;
+    }
+
+    .nav-list-items{
+        display: none;  
+    }
+
+    .nav-button{
+        display: none;
+    }
+
+    .nav-bars{
+        display: flex;
+    }
+
+    .nav-bars>i{
+        font-size: 20px;
+    }
+
+    /* section 1 - Great Websites */
+
+    .section1{ 
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 6vh;
+        margin-bottom: 8vh;
+        gap: 5vw;
+    }
+
+    .section1-right>svg{
+        height: 330px;
+    }
+
+    .section1-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section1-heading{
+        font-size: 24px;
+        text-transform: capitalize;
+    } 
+
+    .section1-description{
+        padding: 1.7em 0em 1em 0em;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 2em;
+    }
+
+    .choose-pacakge-btn{
+        font-size: 13px;
+    }
+
+    /* section 2 - We provide Best Quality */
+
+    .section2{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2vh;
+    }
+
+    .section2-image>svg{
+        height: 250px;
+    }
+
+    /* section 3 - Technical Support  */
+    .section3{
+        display: flex;
+        gap: 0px;
+    }
+
+    .section1-right>img{
+        height: 400px;
+    }
+
+    /* section 4-1 - Services we provide */
+
+    .section4-1{
+        display: flex;
+        flex-direction: column;
+        gap: 0vh;
+    }
+
+    /* section 4-2 Services we provide */
+    
+    .section-4-2-1{
+        flex-direction: column;
+    }
+
+    .services>img, .services>div>svg{
+        height: 45px;
+    }
+
+    
+    .service1,.service-heading{
+        font-size: 20px;
+    }
+
+    .service-heading3{
+        display: flex;
+        align-items: flex-start;
+        
+    }
+
+    /* section 5 - plans cards section */
+
+    .card-section{
+        height: 240vh;
+        background: linear-gradient(to top left ,
+        #0079fb, #3fb6f6);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5em;
+    
+    }
+
+    .card-heading{
+        font-size: 26px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 70vh;
+        width: 65vw;
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+   
+    .card_sec1{
+        height: 12vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1em;
+        padding: 1em;
+        padding-left: 1.2rem;
+    
+       
+    }
+
+    .card_sec2{
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1em;
+    } 
+
+    .card-list{
+        list-style-type: none;
+        height: 22vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-weight: 600;
+        margin-bottom: 0em;
+        
+    }
+
+    .card-list> li:before{
+        content: "\2714";
+        color: #65eaa1;
+        font-size:9px;
+        font-weight: 500;
+        height: 4px;
+        width: 4px;
+        padding: 1px;
+        border-radius: 50%;
+        border: 1px solid #65eaa1;
+        margin-right: 1.2em;
+    }
+
+    .card_pricing{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        gap: 0.7em;
+        
+    }
+
+    
 }
