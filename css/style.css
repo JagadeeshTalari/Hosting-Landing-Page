@@ -599,6 +599,7 @@ nav{
         font-size: 15px;
         font-weight: 500;
         line-height: 2em;
+        text-align: left;
     }
 
     .choose-pacakge-btn{
@@ -1303,4 +1304,123 @@ nav{
     
 }
 
+@media screen and (min-width:0px) and (max-width:500px) {
 
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 525px;
+        width: 312px;
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+
+    .card-button{
+        font-size: 14px;
+        padding: 0.6em 0.75em;
+        margin: 0em 3em;
+    }
+
+    /* section 6-1 */
+
+    .section-6{
+        margin: 8vh auto;
+     
+     }
+
+     .section6-1{
+        max-width: 75vw;  
+    }
+
+     .section6-1>h1{
+        font-size: 19px;
+        margin-bottom: 1rem;
+    }
+
+    .service-description{
+        font-size: 13px;
+        text-align: left;
+    }
+
+    /* section 6-2 */
+
+    .customer_review{
+        background-color: #ffffff;
+        border: 0.1em solid #ededed;
+        text-align: left;
+        width: 70vw;
+        height: 27vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 10px;
+        padding: 1.2rem;
+        font-size: 14px;
+     
+    }
+
+    /* footer */
+        
+    footer{
+        padding: 2vh 7vw;
+        
+    }
+
+    .footer_section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 2em;
+    }
+
+    .footercommon{
+        width: 35vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerlist{
+        height: 22vh;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1rem;
+        font-size: 13px;
+        
+    }
+
+    .footerlist>li{
+        text-align: left;
+    }
+
+    .footer1_logo{
+        width: 100vw;
+        height: 5vh;
+    }
+
+    .footer2,.footer4{
+        margin-left: 2vh;
+    }
+
+    .footer5{
+        gap: 1.5rem;
+        align-self: center;
+    }
+
+    .footer5>h3{
+        display: none;
+        
+    }
+
+    .social_logos{
+        
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+}
